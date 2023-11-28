@@ -44,5 +44,10 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5"
+    },
+
+    "scripts": {
+        "lint": "eslint ./src --ext .ts,.tsx"
+        
     }
 }
