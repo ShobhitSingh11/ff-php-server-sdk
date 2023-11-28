@@ -47,7 +47,9 @@
     },
 
     "scripts": {
-        "lint": "eslint ./src --ext .ts,.tsx"
-        
+        "lint": "eslint ./src --ext .ts,.tsx",
+        "test": "/Users/shobhitsingh/ShobhitTestProjects/ff-php-server-sdk/tests/Integration",
+        "test-coverage": "vendor/bin/phpunit --coverage-html=coverage"
+
     }
 }
