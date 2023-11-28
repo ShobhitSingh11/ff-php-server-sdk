@@ -47,9 +47,8 @@
     },
 
     "scripts": {
-        "lint": "eslint ./src --ext .ts,.tsx",
+        "lint": "find . -name '*.php' -exec php -l {} \\;",
         "test": "/vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html=coverage"
-
+        "test-coverage": "./vendor/bin/phpunit --coverage-html=coverage /Users/shobhitsingh/downloads"
     }
 }
