@@ -48,6 +48,6 @@
 
     "scripts": {
         "lint": "find . -name '*.php' -exec php -l {} \\;",
-        "coverage": "./vendor/bin/phpunit --coverage-html=coverage"
+        "test": "./vendor/bin/phpunit --coverage-html=coverage"
     }
 }
