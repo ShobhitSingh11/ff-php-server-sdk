@@ -1,0 +1,41 @@
+pipeline:
+  identifier: Build_ShobhitSingh11_ff_php_server_sdk_1703141775018
+  name: Build ff-php-server-sdk
+  orgIdentifier: default
+  projectIdentifier: autogen
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: shobhit_connector
+        repoName: ShobhitSingh11/ff-php-server-sdk
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+              - step:
+                  identifier: composerinstall
+                  name: composer_install
+                  spec:
+                    command: composer install
+                    runAsUser: "1000"
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI

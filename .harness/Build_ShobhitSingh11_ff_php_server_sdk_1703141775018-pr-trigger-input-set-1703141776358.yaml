@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_ShobhitSingh11_ff_php_server_sdk_1703141775018-pr-trigger-input-set
+  identifier: Build_ShobhitSingh11_ff_php_server_sdk_1703141775018prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: autogen
+  pipeline:
+    identifier: Build_ShobhitSingh11_ff_php_server_sdk_1703141775018
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
